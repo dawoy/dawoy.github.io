@@ -24,7 +24,6 @@
 	docsify serve docs
 
 # 配置中心
->配置中心
 
 ```php
 <body>
