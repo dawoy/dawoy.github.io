@@ -8,15 +8,15 @@
 ```
 
 # 初始化项目
->如果想在项目的 ./docs 目录里写文档，直接通过 init 初始化项目。
+?>如果想在项目的 ./docs 目录里写文档，直接通过 init 初始化项目。
 
 ```note.js
 docsify init ./docs
 ```
 # 开始写文档
->初始化成功后，可以看到 ./docs 目录下创建的几个文件
+!>初始化成功后，可以看到 ./docs 目录下创建的几个文件
 
-```md
+```markdown
 index.html 入口文件
 README.md 会做为主页内容渲染
 .nojekyll 用于阻止 GitHub Pages 会忽略掉下划线开头的文件
@@ -31,7 +31,7 @@ docsify serve docs
 
 # 配置中心
 
-```php
+```html
 <body>
 <!--主框架-->
   <div id="app"></div>
