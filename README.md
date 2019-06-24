@@ -2,17 +2,18 @@
 
 # 安装
 !>推荐安装 docsify-cli 工具，可以方便创建及本地预览文档网站。
-
-	!>npm i docsify-cli -g
+```
+	npm i docsify-cli -g
+```
 
 # 初始化项目
 >如果想在项目的 ./docs 目录里写文档，直接通过 init 初始化项目。
-
+```html
 	docsify init ./docs
 
 # 开始写文档
 >初始化成功后，可以看到 ./docs 目录下创建的几个文件
-
+```md
 	index.html 入口文件
 	README.md 会做为主页内容渲染
 	.nojekyll 用于阻止 GitHub Pages 会忽略掉下划线开头的文件
