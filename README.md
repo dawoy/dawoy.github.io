@@ -23,3 +23,70 @@
 
 	docsify serve docs
 
+# 配置中心
+>配置中心
+```php
+<body>
+<!--主框架-->
+  <div id="app"></div>
+
+<!--渲染 导航 显示目录-->
+<script>
+  window.$docsify = {
+    name: '',
+    repo: '',
+    loadNavbar: true,
+    loadSidebar: true,
+    subMaxLevel: 6,
+	auto2top: true,//当路线改变时，滚动到屏幕的顶部。
+	mergeNavbar: false,//Navbar将在小屏幕上与侧边栏合并。
+	formatUpdated: '{MM}/{DD} {HH}:{mm}',
+  }
+</script>
+
+<!--搜索-->
+<script>
+  window.$docsify = {
+    search: 'auto', // default
+
+    search : [
+      '/', 
+    ],
+
+    // complete configuration parameters
+    search: {
+      maxAge: 86400000, // Expiration time, the default one day
+      paths: [auto], // or 'auto'
+      placeholder: '搜索',
+
+      // Localization
+      placeholder: {
+        '/zh-cn/': '搜索',
+        '/': 'Type to search'
+      },
+
+      noData: 'No Results!',
+
+      // Localization
+      noData: {
+        '/zh-cn/': '找不到结果',
+        '/': 'No Results'
+      },
+
+      // Headline depth, 1 - 6
+      depth: 2,
+
+      hideOtherSidebarContent: false, // whether or not to hide other sidebar content
+
+      // To avoid search index collision
+      // between multiple websites under the same domain
+      namespace: 'website-1',
+    }
+  }
+</script>
+<script src="//unpkg.com/docsify-copy-code"></script>
+<script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
+<script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+<script src="//unpkg.com/prismjs/components/prism-php.min.js"></script>
+</body>
+```
