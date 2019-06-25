@@ -9,9 +9,7 @@
 
 * PHP教程
    * [PHP面向对象](PHP/PHP面向对象)
-
-* 前段教程
-   * [HTML](Qianduan/)
-   * [CSS](Qianduan/)
-   * [JS](Qianduan/)
-   * [其他](Qianduan/)
+      * [HTML](Qianduan/)
+      * [CSS](Qianduan/)
+      * [JS](Qianduan/)
+   * [其他](Qita/)
