@@ -15,6 +15,3 @@
    * [CSS](Qianduan/)
    * [JS](Qianduan/)
    * [其他](Qianduan/)
-
-* 其他教程
-   * [其他](Qita/)
