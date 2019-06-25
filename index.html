@@ -23,7 +23,26 @@
 	auto2top: true,//当路线改变时，滚动到屏幕的顶部。
 	mergeNavbar: false,//Navbar将在小屏幕上与侧边栏合并。
 	formatUpdated: '{MM}/{DD} {HH}:{mm}',//暂无配置
-    }
+	 plugins: [
+    function(hook, vm) {
+      hook.beforeEach(function (html) {
+        var url = '/' + vm.route.file
+        var editHtml = '[](' + url + ')\n'
+        return editHtml
+          + html
+          + '\n----\n'
+          + 'Last Time {docsify-updated} '
+		  + '<span><a href="https://dawoy.github.io">Mr Dawoy</a> &copy;2019.</span>'
+		  + '<span>Document Creator</span>'
+          + editHtml
+		 })
+		}
+	 ]	
+
+        
+        
+ 
+}
 </script>
 
 <!--搜索-->
