@@ -33,8 +33,6 @@ docsify serve docs
 # 配置中心
 
 ```html
-<body>
-
   window.$docsify = {
     name: '',
     repo: '',
@@ -93,5 +91,4 @@ docsify serve docs
 <script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
 <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
 <script src="//unpkg.com/prismjs/components/prism-php.min.js"></script>
-</body>
 ```
