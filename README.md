@@ -1,4 +1,4 @@
-# Docsify
+# 主页禅模式
 
 # 安装
 !>推荐安装 docsify-cli 工具，可以方便创建及本地预览文档网站。
@@ -34,11 +34,7 @@ docsify serve docs
 
 ```html
 <body>
-<!--主框架-->
-  <div id="app"></div>
 
-<!--渲染 导航 显示目录-->
-<script>
   window.$docsify = {
     name: '',
     repo: '',
@@ -82,8 +78,10 @@ docsify serve docs
 
       // Headline depth, 1 - 6
       depth: 2,
-
-      hideOtherSidebarContent: false, // whether or not to hide other sidebar content
+    
+      // whether or not to hide other sidebar content
+      hideOtherSidebarContent: false, 
+      
 
       // To avoid search index collision
       // between multiple websites under the same domain
