@@ -5,7 +5,7 @@
   * [面向对象](PHP/PHP面向对象)
 
 * Linux
-  * [Debian搭建PHP环境]（Linux/在Debian下安装ApacheMySQLPHP）
+  * [Debian搭建PHP环境](Linux/在Debian下安装ApacheMySQLPHP)
 
 * 视频
   * [AE快捷键](Video/AE快捷键)
