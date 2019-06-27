@@ -3,10 +3,9 @@
 
 * PHP
    * [面向对象](PHP/PHP面向对象)
-   * [HTML](Qianduan/)
-   * [CSS](Qianduan/)
-   * [JS](Qianduan/)
-   * [其他](Qita/)
+
+* Linux
+   *[Debian搭建PHP环境]（Linux/Debian/在Debian下安装 ApacheMySQLPHP）
 
 * 视频
   * [AE快捷键](Video/AE快捷键)
