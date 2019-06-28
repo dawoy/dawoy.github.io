@@ -29,20 +29,20 @@ apt install php(默认是版本7)
     原来在 Debian 9 中，Mysql 已经被替换成了 MariaDB，所以和传统的安装 Mysql 有一些不一样的地方。
 
 ## 安装方法
->首先我们还是可以用 sudo apt install mysql-server 这样安装上的
->但是安装上的还是 MariaDB
->所以最好还是采用 sudo apt install mariadb-server。
->安装上之后，发现和传统的不一样，因为没有弹出设置密码的那个蓝色的界面，误以为直接可以空密码登录。直接尝试 mysql -uroot -p，发现 ERROR 1698 (28000): Access denied for user 'root'@'localhost'。难道默认密码不是空。查看 /etc/mysql/debian.cnf 中默认密码确实是空。
+>首先我们还是可以用 `sudo apt install mysql-server` 这样安装上的
+>但是安装上的还是`MariaDB`
+>所以最好还是采用 `sudo apt install mariadb-server`。
+>安装上之后，发现和传统的不一样，因为没有弹出设置密码的那个蓝色的界面，误以为直接可以空密码登录。直接尝试` mysql -uroot -p，发现 ERROR 1698 (28000): Access denied for user 'root'@'localhost'。`难道默认密码不是空。查看` /etc/mysql/debian.cnf `中默认密码确实是空。
 
->第一反应是执行 mysqld_safe skip-grant-tables，然后 use mysql; ，然后 update user set password=PASSWORD('mysql') where User='root'; 。这样确实可以解决问题，但是重启之后莫名发现又登录不了了。
+>第一反应是执行` mysqld_safe skip-grant-tables，然后 use mysql; ，然后 update user set password=PASSWORD('mysql') where User='root'; 。`这样确实可以解决问题，但是重启之后莫名发现又登录不了了。
 
->懵逼一段时间后发现 MaraiDB 的默认密码确实是空，但是只能用 Root 用户登录注意：这里的用户说的是 linux 系统的 Root 用户，也就是说，你 sudo su 进入 Root 终端后，是可以正常登录的，但是普通用户却无法登录。（为了区别一下，我把 Root 终端的首字母大写，而 mysql 的 root 用户首字母小写）
+>懵逼一段时间后发现` MaraiDB `的默认密码确实是空，但是只能用 Root 用户登录注意：这里的用户说的是 linux 系统的 Root 用户，也就是说，你 `sudo su `进入 Root 终端后，是可以正常登录的，但是普通用户却无法登录。（为了区别一下，我把 Root 终端的首字母大写，而 mysql 的 root 用户首字母小写）
 
 >大概明白了，所以我们不能图方便一直使用 root 用户了，正确的姿势应该是这样的：
 >首先是 `sudo apt install mariadb-server`安装上数据库。
 >然后 sudo su 切换至 Root 终端，通过 mariadb -uroot -p 登录到数据库，如果默认密码不是空的话，可以查看 '/etc/mysql/debian.cnf'。
->这时候要做的是创建新用户：create user 'admin'@'localhost' identified by 'mysql'。
->然后给新用户设置权限：grant all on *.* to 'admin'@'localhost'。
+>这时候要做的是创建新用户`：create user 'admin'@'localhost' identified by 'mysql'。`
+>然后给新用户设置权限`：grant all on *.* to 'admin'@'localhost'。`
 >好了，我们又设置了一个方便的 "Root" 用户，只不过改了名字叫做 admin。
 PS：我发现在 Root 终端中，不管密码输入什么都能正常连接数据库...晕。
 
