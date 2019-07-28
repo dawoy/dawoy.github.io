@@ -1,89 +1,29 @@
-<!DOCTYPE html>
-<html lang="zh-cn">
-<head>
-  <meta charset="UTF-8">
-  <title>文档中心</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="description" content="文档中心">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="https://vnote.oss-cn-beijing.aliyuncs.com/js/vue.css">
-</head>
-<body>
-<!--主框架-->
-  <div id="app"></div>
-
-<!--渲染 导航 显示目录-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title> 请输入密码 </title>
+ </head>
+ <body>
 <script>
-  window.$docsify = {
-    name: '',
-    repo: '',
-    loadNavbar: true,
-    loadSidebar: true,
-    subMaxLevel: 6,
-	auto2top: true,//当路线改变时，滚动到屏幕的顶部。
-	mergeNavbar: false,//Navbar将在小屏幕上与侧边栏合并。
-	formatUpdated: '{MM}/{DD}/{YY} {HH}:{mm}',//文档更新时间
-	 plugins: [
-    function(hook, vm) {
-      hook.beforeEach(function (html) {
-        var url = '/' + vm.route.file
-        var editHtml = '[](' + url + ')\n'
-        return editHtml
-          + html
-          + '\n----\n'
-          + 'Last Time {docsify-updated} '
-		  + '<span><a href="http://www.dawoy.cn">Dawoy</a> &copy;2019. Creator</span>'
-		  + editHtml
-		 })
-		}
-	 ]	
-	}
+function password() {
+var testV = 3;
+var pass1 = prompt('请输入查看密码!','');
+while (testV < 1) {
+if (!pass1)
+history.go(0);
+if (pass1 == "ai33hate") {
+break;
+}
+testV+=1;
+var pass1 =
+prompt('密码错误!');
+}
+if (pass1!="ai33hate" & testV ==3)
+history.go(0);
+return " ";
+}
+document.write(password());
 </script>
-
-<!--搜索-->
-<script>
-  window.$docsify = {
-    search: 'auto', // default
-
-    search : [
-      '/', 
-    ],
-
-    // complete configuration parameters
-    search: {
-      maxAge: 86400000, // Expiration time, the default one day
-      paths: [auto], // or 'auto'
-      placeholder: '搜索',
-
-      // Localization
-      placeholder: {
-        '/zh-cn/': '搜索',
-        '/': 'Type to search'
-      },
-
-      noData: 'No Results!',
-
-      // Localization
-      noData: {
-        '/zh-cn/': '找不到结果',
-        '/': 'No Results'
-      },
-
-      // Headline depth, 1 - 6
-      depth: 2,
-
-      hideOtherSidebarContent: false, // whether or not to hide other sidebar content
-
-      // To avoid search index collision
-      // between multiple websites under the same domain
-      namespace: 'website-1',
-    }
-  }
-</script>
-<script src="https://vnote.oss-cn-beijing.aliyuncs.com/js/docsify.min.js"></script>
-<script src="https://vnote.oss-cn-beijing.aliyuncs.com/js/search.js"></script>
-<script src="https://vnote.oss-cn-beijing.aliyuncs.com/js/prism-php.min.js"></script>
-<script src="https://vnote.oss-cn-beijing.aliyuncs.com/js/docsify-copy-code.min.js"></script>
-<script src="https://vnote.oss-cn-beijing.aliyuncs.com/js/docsify-pagination.min.js"></script>
-</body>
+<h1><a  href="/index1.html">点击前往</a></h1>
+ </body>
 </html>
