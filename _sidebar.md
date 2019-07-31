@@ -15,5 +15,5 @@
   * [万彩影像](Video/万彩影像大师送特别版会员)
 
 * 前端
-  * [JS](Qianduan/jS前端)
+  * [JS](Qianduan/JS前端)
 
