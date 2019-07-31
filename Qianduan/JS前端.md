@@ -1,4 +1,6 @@
 ## 设置网页打开加密或JS网页加密通过js混淆代码加密代码
+
+```javascript
 <script>
 function password() {
 var testV = 3;
@@ -19,5 +21,5 @@ return " ";
 }
 document.write(password());
 </script>
-
+```
 ## 其他
