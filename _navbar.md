@@ -2,8 +2,6 @@
   * [快速了解](README)
 
 * PHP
-  * [PHP修行之路](PHP/README)
-  * [面向对象](PHP/PHP面向对象)
 
 * Linux
   * [Debian搭建PHP环境](Linux/在Debian下安装ApacheMySQLPHP)
