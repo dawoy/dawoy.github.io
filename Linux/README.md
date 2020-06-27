@@ -1,2 +1,2 @@
 # 目录
-  ## [在Debian下安装ApacheMySQLPHP](Linux/在Debian下安装ApacheMySQLPHP)
+  ## [在Debian下安装LMAP环境](Linux/在Debian下安装LMAP环境)
