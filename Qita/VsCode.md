@@ -2,9 +2,9 @@
     主题颜色：Atom One Dark Theme
     图标选择：vscode-icon
     思维导图：vscode-mindmap
-    SYNC同步：安装sync 输入下载GitHub Gist ID:d1da3472da3acf2979164df23f92f8ac
+    SYNC同步：安装sync 输入下载GitHub Gist ID:xxxxxxxxxxxxxxxxxxx
         注意：安装sync上传配置出现失败，在F1命令面板输入sync重置，重新输入
-        Github tongken:b6cc741af49e7d2a8236ab5a7259ba7485091348
+        Github tongken:xxxxxxxxxxxxxxxxxxxxx
         github无法访问：hosts配置未见在文末
         
         sync下载同步：
@@ -14,7 +14,7 @@
 
 
 # GitHub仓库：
-    00、git clone https://github.com/dawoy/php.git。//github存在仓库，首先克隆仓库。
+    00、git clone https://github.com/dawoy/xx.git。//github存在仓库，首先克隆仓库。
     01、git init //克隆下来的仓库带git,不用使用初始化命令，如果没有就用命令初始化管理目录。
     02、git add . //添加所有文件包含修改文件。git add -A  添加到暂存区，如果后面接小数点“.”意为添加文件夹下的所有文件
     03、git commit -m "首次提交" //提交注释。
