@@ -11,7 +11,7 @@
  * [1.Debian搭建LMAP环境](Linux/在Debian下安装LMAP环境)
 
 * PHP
-  * [1.PHP修行之路](PHP/README)
+  * [1.PHP修行之路](PHP/php修行之路)
   * [2.PHP基础](PHP/01PHP基础)
 
 * 前端
